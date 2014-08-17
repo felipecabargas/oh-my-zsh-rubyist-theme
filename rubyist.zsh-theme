@@ -1,5 +1,5 @@
-# Based on robbyrussell's theme, with host and rvm indicators. Example:
-# @host ➜ currentdir rvm:(rubyversion@gemset) git:(branchname)
+# Based on nebirhos theme, with host and rvm indicators. Example:
+# @host-fullname ➜ currentdir rvm:(rubyversion@gemset) git:(branchname)
 
 # Get the current ruby version in use with RVM:
 if [ -e ~/.rvm/bin/rvm-prompt ]; then
@@ -11,7 +11,7 @@ else
 fi
 
 # Get the host name (first 4 chars)
-HOST_PROMPT_="%{$fg_bold[red]%}{$host} § %{$fg_bold[cyan]%}%c "
+HOST_PROMPT_="%{$fg_bold[red]%}$HOST § %{$fg_bold[cyan]%}%c "
 GIT_PROMPT="%{$fg_bold[blue]%}\$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
 PROMPT="$HOST_PROMPT_$RUBY_PROMPT_$GIT_PROMPT"
 
