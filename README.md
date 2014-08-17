@@ -23,7 +23,11 @@ Example:
 
 		ZSH_THEME = "rubyist"
 
-4. Enjoy!
+4. Set your hostname:
+
+		sudo scutil --set HostName new-hostname
+
+5. Enjoy!
 
 ---
 
