@@ -1,4 +1,15 @@
-#rubyist theme for oh-my-zsh**
+#Rubyist theme for oh-my-zsh
+
+**Description**
+---
+
+The shell shows the following info:
+
+	host § folder rvm:(ruby-version) git:(branch) git-status
+
+Example:
+
+![](theme.png)
 
 **Instalation**
 ---
@@ -7,11 +18,11 @@
 2. Move theme file to your Oh-My-Zsh instalation themes folder:
 
 		mv path/to/rubyist.zsh-theme ~/.oh-my-zsh/themes/
-		
+
 3. Edit the `ZSH_THEME` var in your `.zshrc` file in order to match the theme:
-	
+
 		ZSH_THEME = "rubyist"
-		
+
 4. Enjoy!
 
 ---
