@@ -1,5 +1,5 @@
 # Based on nebirhos theme, with host and rvm indicators. Example:
-# @host-fullname ➜ currentdir rvm:(rubyversion@gemset) nvm:(nodeversion) git:(branchname)
+# @host-fullname ➜ currentdir rvm:(rubyversion@gemset) git:(branchname)
 
 # Get the current ruby version in use with RVM:
 if [ -e ~/.rvm/bin/rvm-prompt ]; then
@@ -14,9 +14,9 @@ fi
 HOST_PROMPT_="%{$fg_bold[red]%}$HOST § %{$fg_bold[cyan]%}%c "
 GIT_PROMPT="%{$fg_bold[blue]%}\$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
 # Get the nvm version
-NODE_PROMPT_="%{$fg_bold[blue]%}nvm:(%{$fg[green]%}\$(nvm current)%{$fg_bold[blue]%})%{$reset_color%} "
+# NODE_PROMPT_="%{$fg_bold[blue]%}nvm:(%{$fg[green]%}\$(nvm current)%{$fg_bold[blue]%})%{$reset_color%} "
 
-PROMPT="$HOST_PROMPT_$RUBY_PROMPT_$NODE_PROMPT_$GIT_PROMPT"
+PROMPT="$HOST_PROMPT_$RUBY_PROMPT_$GIT_PROMPT"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
